@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MODERN MUSE - Administration</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Roboto', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f4f4f4;
+            box-sizing: border-box;
+        }
+
+        *, *::before, *::after {
+            box-sizing: inherit;
+        }
+
+        header {
+            background: #2c3e50;
+            color: white;
+            padding: 15px 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            font-size: 1.8rem;
+            font-family: 'Playfair Display', serif;
+        }
+
+        header nav a {
+            text-decoration: none;
+            color: white;
+            font-weight: 500;
+            margin: 0 15px;
+            transition: color 0.3s ease;
+            font-size: 1rem;
+        }
+
+        header nav a:hover {
+            color: #ff5722;
+        }
+
+        .admin-container {
+            padding: 40px 20px;
+            background: #ffffff;
+            text-align: center;
+        }
+
+        .admin-container h1 {
+            font-size: 2.5rem;
+            color: #2c3e50;
+            margin-bottom: 20px;
+            font-family: 'Playfair Display', serif;
+        }
+
+        .admin-items {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+            justify-content: center;
+        }
+
+        .admin-item {
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            width: 280px;
+            overflow: hidden;
+            transition: transform 0.3s ease;
+            text-align: left;
+        }
+
+        .admin-item img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+        }
+
+        .admin-item:hover {
+            transform: scale(1.05);
+        }
+
+        .admin-details {
+            padding: 15px;
+        }
+
+        .admin-details h3 {
+            font-size: 1.4rem;
+            color: #2c3e50;
+            margin-bottom: 8px;
+        }
+
+        .admin-details p {
+            font-size: 1rem;
+            color: #555;
+            margin-bottom: 10px;
+        }
+
+        footer {
+            background: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 15px 0;
+        }
+
+        footer a {
+            color: #ff5722;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+
+        footer a:hover {
+            color: #ecf0f1;
+        }
+
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 1.5rem;
+            }
+
+            .admin-items {
+                flex-direction: column;
+                gap: 20px;
+            }
+
+            .admin-item {
+                width: 100%;
+            }
+
+            header nav a {
+                font-size: 0.9rem;
+                margin: 0 5px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>MODERN MUSE</h1>
+        <nav>
+            <a href="home.html">Home</a>
+            <a href="menu.html">Menu</a>
+            <a href="contact.html">Contact</a>
+            <a href="admin.html">Administration</a>
+        </nav>
+    </header>
+
+    <div class="admin-container">
+        <h1>Meet Our Leadership Team</h1>
+        <div class="admin-items">
+            <div class="admin-item">
+                <img src="mk.jpeg.jpg" alt="CEO">
+                <div class="admin-details">
+                    <h3>Mageshkumar</h3>
+                    <p>CEO of MODERN MUSE</p>
+                </div>
+            </div>
+
+            <div class="admin-item">
+                <img src="prabu.jpeg.jpg" alt="Manager">
+                <div class="admin-details">
+                    <h3>Prabu Karthiek</h3>
+                    <p>Manager</p>
+                </div>
+            </div>
+
+            <div class="admin-item">
+                <img src="rok.jpeg.jpg" alt="Master Chef">
+                <div class="admin-details">
+                    <h3>Rokesh</h3>
+                    <p>Master Chef</p>
+                </div>
+            </div>
+
+            <div class="admin-item">
+                <img src="sriram.jpeg.jpg" alt="Assistant Managing Director">
+                <div class="admin-details">
+                    <h3>Sriram</h3>
+                    <p>Assistant Managing Director</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 MODERN MUSE. All rights reserved. | <a href="home.html">Back to Home</a></p>
+    </footer>
+
+</body>
+</html>
