@@ -925,7 +925,8 @@ admin.html
 ## OUTPUT:
 ![alt text](menu.png)
 ![alt text](admin.png) 
-![alt text](contact.png) 
+![contact](https://github.com/user-attachments/assets/132b13ab-812c-450a-8f36-988b6b474155)
+ 
 ![alt text](home.png)
 
 
